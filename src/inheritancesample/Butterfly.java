@@ -10,6 +10,19 @@ package inheritancesample;
  * @author roshann
  */
 public class Butterfly extends Insect {
+    private boolean walk = false;
+
+    public void setWalk(boolean walk) {
+        this.walk = walk;
+    }
+    
+    public String iswalk(){
+        String ans = "No";
+        if (walk){
+            ans = "Yes";
+        }      
+        return ans;
+    }
 
    
 }
